@@ -23,7 +23,6 @@ import android.view.ViewGroup;
 import android.widget.CursorAdapter;
 import android.widget.TextView;
 
-import com.example.bea.shoppy.data.ShoppyContract.ShoppyEntry;
 import com.example.bea.shoppy.data.ShoppyContract;
 
 /**
@@ -31,7 +30,7 @@ import com.example.bea.shoppy.data.ShoppyContract;
  * that uses a {@link Cursor} of food data as its data source. This adapter knows
  * how to create list items for each row of food data in the {@link Cursor}.
  */
-public class ShoppyCursorAdapter extends CursorAdapter {
+class ShoppyCursorAdapter extends CursorAdapter {
 
     /**
      * Constructs a new {@link ShoppyCursorAdapter}.
@@ -74,7 +73,7 @@ public class ShoppyCursorAdapter extends CursorAdapter {
         TextView nameTextView = (TextView) view.findViewById(R.id.name);
 
         // Find the columns of food attributes that we're interested in
-        int nameColumnIndex = cursor.getColumnIndex(ShoppyContract.ShoppyEntry.COLUMN_FOOD_NAME);;
+        int nameColumnIndex = cursor.getColumnIndex(ShoppyContract.ShoppyEntry.COLUMN_FOOD_NAME);
 
         // Read the food attributes from the Cursor for the current food
         String foodName = cursor.getString(nameColumnIndex);;

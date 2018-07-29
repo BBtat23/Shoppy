@@ -47,7 +47,7 @@
     <string name="action_delete_all_entries" tools:ignore="ExtraTranslation">Delete All Food</string>
 
     <!-- Title text for the empty view, which describes the empty dog house image [CHAR LIMIT=50] -->
-    <string name="empty_view_title_text" tools:ignore="ExtraTranslation">It\'s a bit empty here...</string>
+    <string name="empty_view_title_text" tools:ignore="ExtraTranslation">It\'s a bit empty here…</string>
 
     <!-- Subtitle text for the empty view that prompts the user to add a food [CHAR LIMIT=50] -->
     <string name="empty_view_subtitle_text" tools:ignore="ExtraTranslation">Get started by adding a food</string>
@@ -114,10 +114,13 @@
 
     <string name="title_activity_main2">Main2Activity</string>
     <string name="todo_dialog_hint">What\'s in your mind ?</string>
+    <string name="basket_empty_image">Basket Image Empty View</string>
     <string name="todo_dialog_title">Add Todo</string>
     <string name="todo_dialog_add">Add</string>
     <string name="todo_dialog_cancel">Cancel</string>
     <string name="label_tasks_pending">tasks pending</string>
     <string name="title_simple_widget">Todo App - Pending Tasks</string>
     <string name="title_collection_widget">Todo App - My Tasks</string>
+    <string name="new_task" tools:ignore="ExtraTranslation">New task created</string>
+    <string name="failed_sign_in" tools:ignore="ExtraTranslation">Sign in failed!</string>
 </resources>

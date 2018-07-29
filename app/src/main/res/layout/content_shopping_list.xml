@@ -19,17 +19,18 @@
             android:layout_centerInParent="true">
 
             <ImageView
-                android:id="@+id/empty_shelter_image"
+                android:id="@+id/empty_list_image"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
-                android:src="@drawable/basket"/>
+                android:src="@drawable/basket"
+                android:contentDescription="@string/basket_empty_image"/>
 
             <TextView
                 android:id="@+id/empty_title_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/empty_shelter_image"
+                android:layout_below="@+id/empty_list_image"
                 android:layout_centerHorizontal="true"
                 android:fontFamily="sans-serif-medium"
                 android:paddingTop="16dp"
@@ -51,6 +52,7 @@
 
         <android.support.design.widget.FloatingActionButton
             android:id="@+id/fab"
+            android:contentDescription="@string/editor_activity_title_new_food"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"

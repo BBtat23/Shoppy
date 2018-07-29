@@ -19,12 +19,10 @@ import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-import com.example.bea.shoppy.data.ShoppyContract.ShoppyEntry;
-
 /**
  * Database helper for Shoopy app. Manages database creation and version management.
  */
-public class ShoppyDbHelper extends SQLiteOpenHelper {
+class ShoppyDbHelper extends SQLiteOpenHelper {
 
     public static final String LOG_TAG = ShoppyDbHelper.class.getSimpleName();
 

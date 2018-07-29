@@ -30,7 +30,7 @@ import android.util.Log;
 public class ShoppyProvider extends ContentProvider {
 
     /** Tag for the log messages */
-    public static final String LOG_TAG = ShoppyProvider.class.getSimpleName();
+    private static final String LOG_TAG = ShoppyProvider.class.getSimpleName();
 
     /** URI matcher code for the content URI for the food table */
     private static final int SHOPPY = 100;

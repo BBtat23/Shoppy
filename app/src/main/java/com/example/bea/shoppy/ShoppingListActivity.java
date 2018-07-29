@@ -14,7 +14,6 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.util.Log;
 import android.view.View;
 import android.support.design.widget.NavigationView;
@@ -41,7 +40,7 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 
 import java.util.ArrayList;
-import java.util.List;
+
 
 public class ShoppingListActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener, LoaderManager.LoaderCallbacks<Cursor> {
@@ -54,10 +53,9 @@ public class ShoppingListActivity extends AppCompatActivity
     /**
      * Adapter for the ListView
      */
-    ShoppyCursorAdapter mCursorAdapter;
+    private ShoppyCursorAdapter mCursorAdapter;
 
     private static Context mContext;
-    private ArrayList<String> mFoodList = new ArrayList<>();
     private ListView mListView;
     private ShoppyCursorAdapter mAdapter;
     Cursor mCursor;
@@ -164,7 +162,7 @@ public class ShoppingListActivity extends AppCompatActivity
                     a.runOnUiThread(new Runnable() {
                         @Override
                         public void run() {
-                            Toast.makeText(mContext, "New task created", Toast.LENGTH_LONG).show();
+                            Toast.makeText(mContext, R.string.new_task, Toast.LENGTH_LONG).show();
                             getFoodList();
                             // this will send the broadcast to update the appwidget
                             WidgetProvider.sendRefreshBroadcast(mContext);
@@ -186,7 +184,7 @@ public class ShoppingListActivity extends AppCompatActivity
     }
 
     private void setTodoItems(ArrayList items) {
-        mFoodList = items;
+        ArrayList<String> mFoodList = items;
     }
 
     public void getFoodList() {
@@ -207,7 +205,7 @@ public class ShoppingListActivity extends AppCompatActivity
                             ShoppyContract.ShoppyEntry._ID + " DESC"
                     );
                 }
-                catch (Exception e) {
+                catch (Exception ignored) {
 
                 }
 

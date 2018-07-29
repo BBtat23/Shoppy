@@ -12,9 +12,9 @@ import android.widget.RemoteViewsService;
 import com.example.bea.shoppy.R;
 import com.example.bea.shoppy.data.ShoppyContract;
 
-public class WidgetRemoteViewsFactory implements RemoteViewsService.RemoteViewsFactory {
+class WidgetRemoteViewsFactory implements RemoteViewsService.RemoteViewsFactory {
 
-    private Context mContext;
+    private final Context mContext;
     private Cursor mCursor;
 
     public WidgetRemoteViewsFactory(Context applicationContext, Intent intent) {
@@ -28,16 +28,22 @@ public class WidgetRemoteViewsFactory implements RemoteViewsService.RemoteViewsF
 
     @Override
     public void onDataSetChanged() {
+        final long token = Binder.clearCallingIdentity();
+        try {
+            Uri SHOPPY_URI = ShoppyContract.BASE_CONTENT_URI.buildUpon().appendPath(ShoppyContract.PATH_SHOPPY).build();
+            if (mCursor != null) mCursor.close();
+            mCursor = mContext.getContentResolver().query(
+                    SHOPPY_URI,
+                    null,
+                    null,
+                    null,
+                    null
+            );
+        } finally {
+            Binder.restoreCallingIdentity(token);
+        }
 
-        Uri SHOPPY_URI = ShoppyContract.BASE_CONTENT_URI.buildUpon().appendPath(ShoppyContract.PATH_SHOPPY).build();
-        if (mCursor != null) mCursor.close();
-        mCursor = mContext.getContentResolver().query(
-                SHOPPY_URI,
-                null,
-                null,
-                null,
-                null
-        );
+
     }
 
 //        if (mCursor != null) {
