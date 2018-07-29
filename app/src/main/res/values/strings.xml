@@ -123,4 +123,8 @@
     <string name="title_collection_widget">Todo App - My Tasks</string>
     <string name="new_task" tools:ignore="ExtraTranslation">New task created</string>
     <string name="failed_sign_in" tools:ignore="ExtraTranslation">Sign in failed!</string>
+    <string name="food">Food</string>
+    <string name="log_out">Log Out</string>
+    <string name="log_out_fail">Logout fails!!</string>
+    <string name="something_wrong">Something went wrong, task cannot be created.</string>
 </resources>

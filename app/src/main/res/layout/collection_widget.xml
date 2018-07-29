@@ -12,7 +12,7 @@
             android:text="@string/title_collection_widget"
             android:textColor="@color/colorWhite"
             android:background="@color/colorPrimary"
-            android:textSize="18dp"
+            android:textSize="18sp"
             android:gravity="center"
             android:textAllCaps="true"
             android:layout_height="@dimen/widget_title_min_height"></TextView>

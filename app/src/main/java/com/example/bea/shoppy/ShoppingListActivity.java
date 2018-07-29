@@ -172,7 +172,7 @@ public class ShoppingListActivity extends AppCompatActivity
                     a.runOnUiThread(new Runnable() {
                         @Override
                         public void run() {
-                            Toast.makeText(mContext, "Something went wrong, task cannot be created.", Toast.LENGTH_LONG).show();
+                            Toast.makeText(mContext, R.string.something_wrong, Toast.LENGTH_LONG).show();
                         }
                     });
                 }
@@ -326,7 +326,7 @@ public class ShoppingListActivity extends AppCompatActivity
             Intent signInToMain = new Intent(this, SignInActivity.class);
             startActivity(signInToMain);
         } else {
-            Toast.makeText(this,"Logout fails!!",Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,R.string.log_out_fail,Toast.LENGTH_SHORT).show();
         }
     }
 
