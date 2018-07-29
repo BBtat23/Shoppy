@@ -1,0 +1,123 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Shoppy</string>
+    <string name="title_text">Google Sign-In\nQuickstart</string>
+    <!-- Sign-in status messages -->
+    <string name="signed_in_fmt">Signed in as: %s</string>
+    <string name="signed_in">Signed in</string>
+    <string name="signing_in">Signing in…</string>
+    <string name="signed_out">Signed out</string>
+    <string name="signed_in_err">"Error: please check logs."</string>
+    <string name="error_null_person">
+        Error: Plus.PeopleApi.getCurrentPerson returned null. Ensure that the Google+ API is
+        enabled for your project, you have a properly configured google-services.json file
+        and that your device has an internet connection.
+    </string>
+    <string name="loading">Loading…</string>
+    <string name="auth_code_fmt">Auth Code: %s</string>
+    <string name="id_token_fmt">ID Token: %s</string>
+    <!-- Button labels -->
+    <string name="sign_out">Sign Out</string>
+    <string name="disconnect">Disconnect</string>
+    <!-- Content Description for images -->
+    <string name="desc_google_icon">Google Logo</string>
+    <!-- Activity Names and Descriptions -->
+    <string name="name_sign_in_activity">SignInActivity</string>
+    <string name="desc_sign_in_activity">Signing in, signing out, and revoking access.</string>
+    <string name="desc_sign_in_activity_scopes">Signing in, signing out, and revoking access with Google Drive permissions.</string>
+
+    <string name="name_id_token_activity">IdTokenActivity</string>
+    <string name="desc_id_token_activity">Retrieving an ID Token for the user.</string>
+
+    <string name="desc_auth_code_activity">Demonstrate retrieving an auth code for authorizing your server.</string>
+    <string name="name_auth_code_activity">ServerAuthCodeActivity</string>
+
+    <string name="desc_rest_activity">Demonstrate using Google Sign In with a Google REST API</string>
+    <string name="name_rest_activity">RestApiActivity</string>
+    <string name="title_activity_shopping_list" tools:ignore="ExtraTranslation">ShoppingListActivity</string>
+    <string name="navigation_drawer_open" tools:ignore="ExtraTranslation">Open navigation drawer</string>
+    <string name="navigation_drawer_close" tools:ignore="ExtraTranslation">Close navigation drawer</string>
+    <string name="nav_header_title" tools:ignore="ExtraTranslation">Android Studio</string>
+    <string name="nav_header_subtitle" tools:ignore="ExtraTranslation">android.studio@android.com</string>
+    <string name="nav_header_desc" tools:ignore="ExtraTranslation">Navigation header</string>
+    <string name="action_settings" tools:ignore="ExtraTranslation">Settings</string>
+    <!-- Label for overflow menu option that inserts fake food data into the app [CHAR LIMIT=20] -->
+    <string name="action_insert_dummy_data" tools:ignore="ExtraTranslation">Insert Dummy Data</string>
+
+    <!-- Label for overflow menu option that deletes all food data in the app [CHAR LIMIT=20] -->
+    <string name="action_delete_all_entries" tools:ignore="ExtraTranslation">Delete All Food</string>
+
+    <!-- Title text for the empty view, which describes the empty dog house image [CHAR LIMIT=50] -->
+    <string name="empty_view_title_text" tools:ignore="ExtraTranslation">It\'s a bit empty here...</string>
+
+    <!-- Subtitle text for the empty view that prompts the user to add a food [CHAR LIMIT=50] -->
+    <string name="empty_view_subtitle_text" tools:ignore="ExtraTranslation">Get started by adding a food</string>
+
+    <!-- Title for the activity to add a new food [CHAR LIMIT=20] -->
+    <string name="editor_activity_title_new_food" tools:ignore="ExtraTranslation">Add a Food</string>
+
+    <!-- Title for the activity to edit an existing food [CHAR LIMIT=20] -->
+    <string name="editor_activity_title_edit_food" tools:ignore="ExtraTranslation">Edit Food</string>
+
+    <!-- Label for editor menu option to save food and leave editor [CHAR LIMIT=20] -->
+    <string name="action_save" tools:ignore="ExtraTranslation">Save</string>
+
+    <!-- Label for editor overflow menu option that deletes the current food [CHAR LIMIT=20] -->
+    <string name="action_delete" tools:ignore="ExtraTranslation">Delete</string>
+
+    <!-- Toast message in editor when new food has been successfully inserted [CHAR LIMIT=NONE] -->
+    <string name="editor_insert_food_successful" tools:ignore="ExtraTranslation">Food saved</string>
+
+    <!-- Toast message in editor when new food has failed to be inserted [CHAR LIMIT=NONE] -->
+    <string name="editor_insert_food_failed" tools:ignore="ExtraTranslation">Error with saving food</string>
+
+    <!-- Toast message in editor when current food was successfully updated [CHAR LIMIT=NONE] -->
+    <string name="editor_update_food_successful" tools:ignore="ExtraTranslation">Food updated</string>
+
+    <!-- Toast message in editor when current food has failed to be updated [CHAR LIMIT=NONE] -->
+    <string name="editor_update_food_failed" tools:ignore="ExtraTranslation">Error with updating food</string>
+
+    <!-- Dialog message when user is leaving editor but hasn't saved changes [CHAR LIMIT=NONE] -->
+    <string name="unsaved_changes_dialog_msg" tools:ignore="ExtraTranslation">Discard your changes and quit editing?</string>
+
+    <!-- Dialog button text for the option to discard a user's changes [CHAR LIMIT=20] -->
+    <string name="discard" tools:ignore="ExtraTranslation">Discard</string>
+
+    <!-- Dialog button text for the option to keep editing the current food [CHAR LIMIT=20] -->
+    <string name="keep_editing" tools:ignore="ExtraTranslation">Keep Editing</string>
+
+    <!-- Toast message in editor when current food was successfully deleted [CHAR LIMIT=NONE] -->
+    <string name="editor_delete_food_successful" tools:ignore="ExtraTranslation">Food deleted</string>
+
+    <!-- Toast message in editor when current food has failed to be deleted [CHAR LIMIT=NONE] -->
+    <string name="editor_delete_food_failed" tools:ignore="ExtraTranslation">Error with deleting food</string>
+
+    <!-- Dialog message to ask the user to confirm deleting the current food [CHAR LIMIT=NONE] -->
+    <string name="delete_dialog_msg" tools:ignore="ExtraTranslation">Delete this food?</string>
+
+    <!-- Dialog button text for the option to confirm deleting the current food [CHAR LIMIT=20] -->
+    <string name="delete" tools:ignore="ExtraTranslation">Delete</string>
+
+    <!-- Dialog button text for the option to cancel deletion of the current food [CHAR LIMIT=20] -->
+    <string name="cancel" tools:ignore="ExtraTranslation">Cancel</string>
+
+    <!-- Label for overview category of attributes in the editor [CHAR LIMIT=30] -->
+    <string name="category_overview" tools:ignore="ExtraTranslation">Overview</string>
+
+    <!-- Label for gender information in the editor [CHAR LIMIT=30] -->
+    <string name="category_gender" tools:ignore="ExtraTranslation">Gender</string>
+
+    <!-- Label for measurement information in the editor [CHAR LIMIT=30] -->
+    <string name="category_measurement" tools:ignore="ExtraTranslation">Measurement</string>
+
+    <!-- Text hint for name field in the editor [CHAR LIMIT=30] -->
+    <string name="hint_food_name" tools:ignore="ExtraTranslation">Name</string>
+
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="todo_dialog_hint">What\'s in your mind ?</string>
+    <string name="todo_dialog_title">Add Todo</string>
+    <string name="todo_dialog_add">Add</string>
+    <string name="todo_dialog_cancel">Cancel</string>
+    <string name="label_tasks_pending">tasks pending</string>
+    <string name="title_simple_widget">Todo App - Pending Tasks</string>
+    <string name="title_collection_widget">Todo App - My Tasks</string>
+</resources>
