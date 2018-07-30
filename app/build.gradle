@@ -13,9 +13,9 @@ android {
     signingConfigs {
         release {
             storeFile file("ShoppyKey")
-            storePassword '1234'
+            storePassword '123456'
             keyAlias 'Shoppy'
-            keyPassword '1234'
+            keyPassword '123456'
         }
         buildTypes {
             release {
