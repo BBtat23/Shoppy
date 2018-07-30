@@ -12,7 +12,7 @@ android {
     }
     signingConfigs {
         release {
-            storeFile file("ShoppyKey")
+            storeFile file("ShoppyKey.jks")
             storePassword '123456'
             keyAlias 'Shoppy'
             keyPassword '123456'
@@ -21,6 +21,7 @@ android {
             release {
                 minifyEnabled false
                 proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+                signingConfig signingConfigs.release
             }
         }
     }
@@ -35,7 +36,7 @@ android {
         androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
         // Dependency for Google Sign-In
         implementation 'com.google.android.gms:play-services-auth:15.0.1'
-        compile 'com.google.firebase:firebase-core:16.0.1'
+        implementation 'com.google.firebase:firebase-core:16.0.1'
         implementation 'com.google.android.gms:play-services-analytics:16.0.1'
         implementation 'com.jakewharton.timber:timber:4.7.1'
 
